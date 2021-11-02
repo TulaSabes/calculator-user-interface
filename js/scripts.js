@@ -22,4 +22,11 @@ $(document).ready(function() {
     const result = add(number1, number2);
     $("#output").text(result);
   });
+  (document).ready(function() {
+    $("form#divide").submit(function(event) { 
+      event.preventDefault();
+      const number1 = parseInt($("#add1").val());
+      const number2 = parseInt($("#add2").val());
+      const result = add(number1, number2);
+      $("#output").text(result);
 });
